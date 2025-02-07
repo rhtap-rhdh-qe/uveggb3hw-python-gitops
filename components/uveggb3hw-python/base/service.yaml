@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: uveggb3hw-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: uveggb3hw-python 
+  name: uveggb3hw-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: uveggb3hw-python 
